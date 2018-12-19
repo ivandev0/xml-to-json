@@ -1,4 +1,11 @@
 # Created by .ignore support plugin (hsz.mobi)
+### Java template
+# Compiled class file
+*.class
+
+# Package Files #
+*.jar
+
 ### Gradle template
 .gradle
 /build/
@@ -28,13 +35,6 @@
 
 # IntelliJ
 out/
-
-### Java template
-# Compiled class file
-*.class
-
-# Package Files #
-*.jar
 
 ### Example user template
 # IntelliJ project files
