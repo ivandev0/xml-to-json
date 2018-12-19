@@ -4,4 +4,4 @@ ARG DEPENDENCY=build/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
-ENTRYPOINT ["java", "-Dserver.port=80", "-cp","app:app/lib/*","application.Application"]
+ENTRYPOINT ["java", "-Dserver.port=80", "-cp","app:app/lib/*","software.engineering.task.Application"]
