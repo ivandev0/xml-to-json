@@ -9,9 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 import software.engineering.task.model.PrettyJsonMaker;
 import software.engineering.task.model.XmlToJsonConverter;
 
+/**
+ * This class waits and processes all incoming requests
+ */
 @RestController
 public class MainController {
 
+    /**
+     * Method processes incoming XML and convert it to JSON.
+     *
+     * @param xml - XML to convert
+     * @return - converted JSON or "Not valid" message if XML is not valid
+     */
     @PostMapping(path = "/", consumes = "application/xml")
     public ResponseEntity<String> xmlToJson(@RequestBody String xml){
         try {
