@@ -16,6 +16,8 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.json", "json", "20140107")
+    compile("com.google.code.gson:gson:2.8.5")
     testCompile("junit", "junit", "4.12")
 }
 
